@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WhiteBoard</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li>
+            <div id="pen" class="nav-icons nav-icons-selected">
+              <img src="./icons/pen.png" alt="pen" />
+            </div>
+          </li>
+          <li>
+            <div id="erase" class="nav-icons">
+              <img src="./icons/eraser.png" alt="pen" />
+            </div>
+          </li>
+          <li>
+            <div id="undo" class="nav-icons">
+              <img src="./icons/undo-circular-arrow.png" alt="pen" />
+            </div>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <div class="outer">
+        <canvas id="myCanvas"></canvas>
+      </div>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
