@@ -18,6 +18,7 @@ function resize() {
   ctx.canvas.width = window.innerWidth;
   ctx.fillStyle = boardColor;
   ctx.fillRect(0, 0, window.innerWidth, window.innerHeight);
+  redraw();
 }
 
 resize();
