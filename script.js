@@ -83,6 +83,7 @@ function draw(event) {
   lastTaskPerformed.push({
     moveX: moveX,
     moveY: moveY,
+    width: width,
     lineX: x,
     lineY: y,
     pen: isPen,
@@ -122,7 +123,7 @@ function redraw() {
   ctx.fillRect(0, 0, window.innerWidth, window.innerHeight);
   for (let i = 0; i < lastTaskPerformed.length; i++) {
     ctx.beginPath();
-    ctx.lineWidth = width;
+    ctx.lineWidth = lastTaskPerformed[i].width;
     ctx.lineCap = "round";
     ctx.strokeStyle = lastTaskPerformed[i].fontColor;
     ctx.moveTo(lastTaskPerformed[i].moveX, lastTaskPerformed[i].moveY);
