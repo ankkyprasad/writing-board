@@ -8,7 +8,7 @@ let position = { x: 0, y: 0 };
 let { x, y } = position;
 let fontColor = "#FF0000";
 const boardColor = "#383838";
-const width = 10;
+let width = 5;
 let isPen = true;
 let isEraser = false;
 let lastTaskPerformed = [];
@@ -42,6 +42,7 @@ function setPenHandler() {
   isPen = true;
   isEraser = false;
   fontColor = "#FF0000";
+  width = 5;
   penEl.classList.add("nav-icons-selected");
   eraseEl.classList.remove("nav-icons-selected");
 }
@@ -50,6 +51,7 @@ function setEraserHandler() {
   isPen = false;
   isEraser = true;
   fontColor = boardColor;
+  width = 40;
   penEl.classList.remove("nav-icons-selected");
   eraseEl.classList.add("nav-icons-selected");
 }
